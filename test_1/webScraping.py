@@ -34,3 +34,4 @@ for attachment in attachmentList:
 with zipfile.ZipFile('attachments.zip', 'w') as attZip:
     for file_name in file_names:
         attZip.write(file_name)
+    attZip.close()
