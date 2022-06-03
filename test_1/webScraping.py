@@ -12,7 +12,7 @@ crawledPage = BeautifulSoup(
 )
 
 html_targetList = crawledPage.find_all('a', attrs={
-    'target': '_self',
+    'data-tippreview-enabled': 'true',
     'class': 'internal-link'
 })
 
